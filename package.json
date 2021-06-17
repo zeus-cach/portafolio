@@ -1,0 +1,17 @@
+{
+  "name": "paginaprincipal",
+  "version": "1.0.0",
+  "description": "mi sitio web principal",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zeus cach",
+  "license": "ISC"
+}

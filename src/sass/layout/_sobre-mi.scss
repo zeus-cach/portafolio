@@ -1,0 +1,40 @@
+.contenedor-info {
+    .h1__info {
+    text-align: center;
+    color: $negro;
+    font-size: 5.5rem;
+    letter-spacing: 0.5rem;
+    font-family: $fuentePrincipal;
+    font-weight: 600;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    }
+
+    .contenedor__seccion--info {
+    
+        background: linear-gradient(to right, #005C98, #505BDA);
+        padding-bottom: 3rem;
+        
+        .icon-info {
+            display: flex;
+            justify-content: center;
+
+            padding-top: 3rem;
+
+            .img-star {
+                width: 80px;
+            }
+        }
+
+        .p__info {
+            font-size: 2.7rem;
+            font-family: $fuenteSecundaria;
+            color: $blanco;
+
+            padding: 2rem;
+        }
+        
+    }
+}
+

@@ -1,0 +1,98 @@
+.secciones-ab {
+    .h1__info {
+        text-align: center;
+        color: $negro;
+        font-size: 5.5rem;
+        letter-spacing: 0.5rem;
+        font-family: $fuentePrincipal;
+        font-weight: 600;
+    
+        padding-top: 4rem;     
+
+        @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        }
+
+        }
+
+        .contendor-grid {
+            padding: 4rem;
+
+            @include tablet {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 3rem;
+                padding: 3rem;
+            }
+
+            .espacio-card {
+                padding-bottom: 3rem;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0rem;
+            }
+        }
+
+        .card-list {
+            background-color: $grisBajo;
+            --borderWidth: 3px;
+            position: relative;
+            border-radius: var(--borderWidth);    
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: calc(-1 * var(--borderWidth));
+                left: calc(-1 * var(--borderWidth));
+                height: calc(100% + var(--borderWidth) * 2);
+                width: calc(100% + var(--borderWidth) * 2);
+                background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+                border-radius: calc(2 * var(--borderWidth));
+                z-index: -1;
+                animation: animatedgradient 3s ease alternate infinite;
+                background-size: 300% 300%;
+              }
+
+            .icon-ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);      
+            }
+
+            .titulo {
+                .titulo-ab {
+                    font-size: 4rem;
+                    font-family: $fuenteSecundaria;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+}
+
+
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  .icon-li {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    .img-li-card {
+        width: 90px;
+        padding-top: .8rem;
+        padding-bottom: .9rem;
+    }
+  }
+
